@@ -8,7 +8,7 @@ function VendingMachine() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="/vending machine.jpeg" className="App-logo" alt="logo" />
+        <img src="/vending machine.jpeg" className="App" alt="logo" />
         <p>
           What would you like to eat today?
         </p>

@@ -13,6 +13,7 @@ function App() {
             <Routes>
               <Route path="/Soda" element={<Soda/>} />
               <Route path="/Chips" element={<Chips/>} />
+              <Route path="/HoneyBuns" element={<Honeybuns/>} />
               <Route path="/" element={<VendingMachine/>} />
             </Routes>
           </BrowserRouter>
