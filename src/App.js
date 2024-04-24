@@ -1,24 +1,23 @@
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Chips from './Chips'
+import Soda from './soda'
+import Honeybuns from './honeybuns'
+import VendingMachine from './VendingMachine';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src="/vending machine.jpeg" className="App-logo" alt="logo" />
-        <p>
-          What would you like to eat today?
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/Soda" element={<Soda/>} />
+              <Route path="/Chips" element={<Chips/>} />
+              <Route path="/" element={<VendingMachine/>} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+      );
 }
 
-export default App;
+export default App
